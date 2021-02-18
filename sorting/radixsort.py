@@ -10,12 +10,9 @@ def countingSort(place):
     B = list(range(len(A)))
     C = [0 for i in range(k)]
     
-
-
     for j in range(len(A)):
         index = A[j]//place
         C[index % 10] += 1
-
 
     for i in range(k):
         C[i] += C[i-1]
